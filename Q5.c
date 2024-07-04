@@ -8,14 +8,14 @@ int main() {
     printf("Enter s: ");
     fgets(s, sizeof(s), stdin);
 
-    printf("OUTPUT:\n");
-    printf("%d\n", count_words_starting_with_a(s));
+    printf("\nOUTPUT\n");
+    printf("%d\n", countCharacterA(s));
 
     return 0;
 }
 
 
-int count_words_starting_with_a(char *s) {
+int countCharacterA(char *s) {
     int count = 0;
     int i = 0;
     int word_start = 1;
@@ -33,5 +33,3 @@ int count_words_starting_with_a(char *s) {
 
     return count;
 }
-
-
